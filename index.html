@@ -3,116 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-Academia</title>
     <link rel="stylesheet" href="style.css">
-    
-    <title>Hack4skill AiHub</title>
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="logo">Ai-Academia</h1>
+        <h1 class="logo"><a href="#">Ai-Academia</a></h1>
         <ul class="navlinks">
-            <li class="active"><a href="#"></a>Home</li>
-            <li><a href="#events">About</a></li>
-            <li><a href="#"></a>Team</li>
-            <li><a href="#AboutProject"></a>Project</li>
-            <li><a href=""></a></li>
-            <li class="ctn"><a href="#"></a>Login / Signup</li>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="ctn"><a href="#login">Login / Signup</a></li>
         </ul>
-        <img src="./menubtn.png" alt="" class="menu-btn">
+        <img src="menubtn.png" alt="Menu" class="menu-btn">
     </nav>
-    <header>
+
+    <header id="home">
         <div class="header-content">
-            <h2>Welcome to AI-Academia</h2>
+            <h2>Welcome to Ai-Academia</h2>
             <div class="line"></div>
             <h1>Your AI Career Guide</h1>
-            <a href="" class="ctn">learn more</a>
+            <a href="#about" class="ctn">Learn More</a>
         </div>
     </header>
-<!--How stuffs work here-->
-    <section class="events" id="events">
+
+    <!-- About Section -->
+    <section class="events" id="about">
         <div class="title">
             <h1>Your AI Teachers</h1>
             <div class="line"></div>
         </div>
         <div class="row">
             <div class="column">
-                <img src="./bookimg.jpg" alt="">
+                <img src="bookimg.jpg" alt="BookSage">
                 <h4>BookSage</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia laudantium tempore obcaecati assumenda in iure officiis deleniti doloribus? Veritatis dolores tenetur voluptatibus corporis earum aut suscipit recusandae accusantium dolorum delectus!</p>
-                <a href="" class="ctn">Learn More!</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia laudantium tempore obcaecati assumenda in iure officiis deleniti doloribus?</p>
+                <a href="#" class="ctn">Learn More!</a>
             </div>
             <div class="column">
-                <img src="./onlineeducation.jpg" alt="">
+                <img src="onlineeducation.jpg" alt="Resourcio">
                 <h4>Resourcio</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia laudantium tempore obcaecati assumenda in iure officiis deleniti doloribus? Veritatis dolores tenetur voluptatibus corporis earum aut suscipit recusandae accusantium dolorum delectus!</p>
-                <a href="" class="ctn">Learn More!</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia laudantium tempore obcaecati assumenda in iure officiis deleniti doloribus?</p>
+                <a href="#" class="ctn">Learn More!</a>
             </div>
         </div>
     </section>
-<!--About the project-->
-    <section class="AboutProject">
-        <div class="content-explore">
-        <h1>From Doubt to Clarity</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias nostrum vero omnis commodi maiores. Provident, incidunt nostrum ea vitae earum aliquid quas quasi quibusdam dolores consequuntur quaerat voluptatum soluta?</p>
-        <a href="#" class="ctn">Learn More</a>
-        </div>
-    </section>
-<!--Use Case-->
-<section class="tours">
-    <div class="row">
-        <div class="col content-col">
-            <h1>How to Use our Web-App</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet sed at eum facere, eius beatae fuga cumque quia itaque quae eaque molestias assumenda vel ex natus esse nemo sit?</p>
-            <a href="#" class="ctn">Learn more</a>
-        </div>
-        <div class="col image-col">
-            <div class="image-gallery">
-                <img src="./pexels-rahulp9800-1933900.jpg" alt="">
-                <img src="./onlineeducation.jpg" alt="">
-                <img src="./pexels-stywo-1054218.jpg" alt="">
-                <img src="./pexels-tara-winstead-8386356.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-<!--Footer Section-->
-<footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/www.aot.edu.in/">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Suman_N_Jain">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/school/academy-of-technology/people/?originalSubdomain=in">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/explore/locations/394169465/academy-of-technology-adisaptagram/">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <p>&copy;2024 ByteBlaster | AOT</p>
-  </footer>
-    
-      
-<script>
-    const menuBtn = document.querySelector('.menu-btn')
-    const navlinks = document.querySelector('.navlinks')
 
-    menuBtn.addEventListener('click',()=>{
-        navlinks.classList.toggle('mobile-menu')
-    })
-</script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Project Section -->
+    <section class="AboutProject" id="project">
+        <div class="content-explore">
+            <h1>From Doubt to Clarity</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias nostrum vero omnis commodi maiores. Provident, incidunt nostrum ea vitae earum aliquid quas quasi quibusdam dolores consequuntur quaerat voluptatum soluta?</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>How to Use our Web-App</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet sed at eum facere, eius beatae fuga cumque quia itaque quae eaque molestias assumenda vel ex natus esse nemo sit?</p>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="pexels-rahulp9800-1933900.jpg" alt="Gallery Image 1">
+                    <img src="onlineeducation.jpg" alt="Gallery Image 2">
+                    <img src="pexels-stywo-1054218.jpg" alt="Gallery Image 3">
+                    <img src="pexels-tara-winstead-8386356.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/www.aot.edu.in/">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Suman_N_Jain">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/school/academy-of-technology/people/?originalSubdomain=in">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/explore/locations/394169465/academy-of-technology-adisaptagram/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <p>&copy;2024 ByteBlaster | AOT</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.navlinks');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
 </body>
 </html>
